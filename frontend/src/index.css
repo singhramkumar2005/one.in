@@ -1,0 +1,438 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   🌸 LAVENDER & PASTEL TASK-APP DESIGN SYSTEM
+   Soft Pastel Lilac Canvas | Pure White Cards | Vibrant Rounded Pills
+   ============================================ */
+
+:root {
+  /* ===== LIGHT THEME (PASTEL LAVENDER & TASK APP) ===== */
+  
+  /* Background Colors - Lilac Canvas & Crisp White */
+  --bg-primary: #F3EEFB;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #FAF7FD;
+  --bg-elevated: #FFFFFF;
+  
+  /* Card & Surface */
+  --card-bg: #FFFFFF;
+  --card-border: #E8DFF2;
+  --card-hover-bg: #FCFAFF;
+  
+  /* Text Colors */
+  --text-primary: #17171C;
+  --text-secondary: #6B7082;
+  --text-tertiary: #9CA0B0;
+  --text-inverse: #FFFFFF;
+  
+  /* Primary Theme Accents */
+  --primary: #8E4CF6;
+  --primary-light: #F2EBFF;
+  --primary-dark: #6B29D6;
+  
+  /* Pastel Accent Colors matching the reference image */
+  --accent-green: #44D368;
+  --accent-green-light: #DDF9E2;
+  --accent-green-text: #147034;
+  
+  --accent-purple: #9C6ADE;
+  --accent-purple-light: #EFE7FC;
+  --accent-purple-text: #5D2D9C;
+  
+  --accent-orange: #FF9F38;
+  --accent-orange-light: #FFF0DD;
+  --accent-orange-text: #9B5305;
+  
+  --accent-pink: #FF708F;
+  --accent-pink-light: #FFE8EE;
+  --accent-pink-text: #A1183A;
+  
+  --accent-blue: #5B8DEF;
+  --accent-blue-light: #E5EFFF;
+  --accent-blue-text: #1B459B;
+  
+  --accent-dark: #141416;
+  --accent-dark-hover: #26272E;
+  
+  /* Semantic Colors */
+  --success: #44D368;
+  --warning: #FF9F38;
+  --error: #FF708F;
+  --info: #5B8DEF;
+  
+  /* Soft Shadows & Glass */
+  --shadow-xs: 0 1px 3px rgba(80, 50, 110, 0.04);
+  --shadow-sm: 0 2px 8px rgba(80, 50, 110, 0.05);
+  --shadow-md: 0 6px 20px rgba(80, 50, 110, 0.07);
+  --shadow-lg: 0 10px 30px rgba(80, 50, 110, 0.08);
+  --shadow-xl: 0 16px 40px rgba(80, 50, 110, 0.1);
+  --shadow-2xl: 0 24px 60px rgba(80, 50, 110, 0.12);
+  
+  /* Border Radius */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-2xl: 28px;
+  --radius-full: 9999px;
+  
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== DARK MODE (Obsidian & Jet-Black Pro Workstation) ===== */
+[data-theme="dark"], .dark, html.dark {
+  --bg-primary: #0A0A0D;
+  --bg-secondary: #121216;
+  --bg-tertiary: #16161C;
+  --bg-elevated: #1B1B22;
+  
+  --card-bg: #1A1A22;
+  --card-border: #282834;
+  --card-hover-bg: #22222E;
+  
+  --text-primary: #EDEDF2;
+  --text-secondary: #9090A2;
+  --text-tertiary: #5E5E72;
+  --text-inverse: #0A0A0D;
+  
+  --accent-green-light: #0D331A;
+  --accent-green-text: #4ADE80;
+  --accent-purple-light: #301754;
+  --accent-purple-text: #C49CFF;
+  --accent-orange-light: #422006;
+  --accent-orange-text: #FB923C;
+  --accent-pink-light: #38121E;
+  --accent-pink-text: #FB7185;
+  --accent-blue-light: #0A2F45;
+  --accent-blue-text: #38BDF8;
+  
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.7);
+  --shadow-xl: 0 16px 40px rgba(0, 0, 0, 0.8);
+  --shadow-2xl: 0 24px 60px rgba(0, 0, 0, 0.9);
+}
+
+/* Base resets & typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.35rem; }
+h4 { font-size: 1.15rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; }
+
+p {
+  color: var(--text-secondary);
+}
+
+/* ============================================
+   🎨 TASK APP CARDS & CONTAINERS
+   ============================================ */
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.card-highlight-green {
+  background: #44D368 !important;
+  color: #141416 !important;
+  border-color: #38C35A !important;
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  box-shadow: 0 8px 24px rgba(68, 211, 104, 0.25);
+}
+
+.card-highlight-green h1,
+.card-highlight-green h2,
+.card-highlight-green h3,
+.card-highlight-green h4,
+.card-highlight-green p {
+  color: #141416 !important;
+}
+
+.card-interactive {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.card-interactive:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+/* ============================================
+   🔘 BUTTONS - TASK APP STYLE
+   ============================================ */
+
+.btn {
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-dark, .btn-primary {
+  background: var(--accent-dark);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-dark:hover, .btn-primary:hover {
+  background: var(--accent-dark-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  color: #FFFFFF;
+}
+
+.btn-purple {
+  background: var(--primary);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-purple:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--primary);
+}
+
+.btn-pill-tab {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--card-border);
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-pill-tab.active {
+  background: var(--accent-dark);
+  color: #FFFFFF;
+  border-color: var(--accent-dark);
+}
+
+.btn-pill-tab .tab-badge {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.btn-pill-tab.active .tab-badge {
+  background: #44D368;
+  color: #141416;
+}
+
+/* ============================================
+   🏷️ BADGES & PILLS
+   ============================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.badge-green {
+  background: var(--accent-green-light);
+  color: var(--accent-green-text);
+}
+
+.badge-purple {
+  background: var(--accent-purple-light);
+  color: var(--accent-purple-text);
+}
+
+.badge-orange {
+  background: var(--accent-orange-light);
+  color: var(--accent-orange-text);
+}
+
+.badge-pink, .badge-red {
+  background: var(--accent-pink-light);
+  color: var(--accent-pink-text);
+}
+
+.badge-blue {
+  background: var(--accent-blue-light);
+  color: var(--accent-blue-text);
+}
+
+.badge-dark {
+  background: var(--accent-dark);
+  color: #FFFFFF;
+}
+
+.badge-success { background: var(--accent-green-light); color: var(--accent-green-text); }
+.badge-warning { background: var(--accent-orange-light); color: var(--accent-orange-text); }
+.badge-error { background: var(--accent-pink-light); color: var(--accent-pink-text); }
+.badge-info { background: var(--accent-blue-light); color: var(--accent-blue-text); }
+
+/* Inputs */
+.input, .select, .textarea {
+  background: var(--card-bg);
+  border: 1.5px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all var(--transition-fast);
+  width: 100%;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(142, 76, 246, 0.15);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8CFE6;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BFB2D4;
+}
+
+/* Fullscreen exam security */
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
+.no-copy {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Hide scrollbar utility (for horizontal scrollable tabs on mobile) */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Safe area padding for notched phones (iPhone X+, Android cutout) */
+@supports (padding: max(0px)) {
+  .safe-area-bottom {
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+  .safe-area-top {
+    padding-top: max(0px, env(safe-area-inset-top));
+  }
+}
+
+/* Mobile touch improvements */
+@media (max-width: 768px) {
+  /* Prevent double-tap zoom on interactive elements */
+  button, a, input, select, textarea, [role="button"] {
+    touch-action: manipulation;
+  }
+  
+  /* Ensure minimum 44px touch targets */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

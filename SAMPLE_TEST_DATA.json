@@ -1,0 +1,325 @@
+{
+  "title": "SSC CGL Mock Test 2024 - Full Length",
+  "description": "Complete mock test for SSC CGL examination covering all sections with 100 questions",
+  "examType": "SSC",
+  "difficulty": "medium",
+  "duration": 60,
+  "totalMarks": 100,
+  "language": "English",
+  "instructions": [
+    "The test contains 100 questions divided into 4 sections",
+    "Each question carries 1 mark",
+    "There is negative marking of 0.25 marks for each wrong answer",
+    "Use the question palette to navigate between questions",
+    "You can mark questions for review and revisit them later",
+    "The timer will automatically submit the test when time expires",
+    "Make sure you have a stable internet connection",
+    "Do not refresh the page during the test"
+  ],
+  "sections": [
+    {
+      "name": "General Intelligence and Reasoning",
+      "description": "Questions on logical reasoning, verbal and non-verbal reasoning",
+      "order": 1,
+      "questions": [
+        {
+          "questionNumber": 1,
+          "questionText": "If BROTHER is coded as CSPUIFS, then how will SISTER be coded?",
+          "questionType": "single",
+          "options": [
+            {
+              "optionText": "TJTUPS",
+              "isCorrect": true
+            },
+            {
+              "optionText": "TJTUFS",
+              "isCorrect": false
+            },
+            {
+              "optionText": "TJSTUFS",
+              "isCorrect": false
+            },
+            {
+              "optionText": "TKTUPS",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Each letter is replaced by the next letter in alphabetical order. S→T, I→J, S→T, T→U, E→F, R→S",
+          "marks": {
+            "positive": 1,
+            "negative": 0.25
+          },
+          "difficulty": "easy",
+          "tags": ["coding-decoding", "reasoning"]
+        },
+        {
+          "questionNumber": 2,
+          "questionText": "Find the missing number in the series: 2, 6, 12, 20, 30, ?",
+          "questionType": "single",
+          "options": [
+            {
+              "optionText": "40",
+              "isCorrect": false
+            },
+            {
+              "optionText": "42",
+              "isCorrect": true
+            },
+            {
+              "optionText": "44",
+              "isCorrect": false
+            },
+            {
+              "optionText": "46",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Pattern: 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42",
+          "marks": {
+            "positive": 1,
+            "negative": 0.25
+          },
+          "difficulty": "medium",
+          "tags": ["number-series", "reasoning"]
+        },
+        {
+          "questionNumber": 3,
+          "questionText": "If A is the father of B, but B is not the son of A, what is B to A?",
+          "questionType": "single",
+          "options": [
+            {
+              "optionText": "Daughter",
+              "isCorrect": true
+            },
+            {
+              "optionText": "Son",
+              "isCorrect": false
+            },
+            {
+              "optionText": "Nephew",
+              "isCorrect": false
+            },
+            {
+              "optionText": "Niece",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "B is not the son but is a child of A, therefore B must be A's daughter",
+          "marks": {
+            "positive": 1,
+            "negative": 0.25
+          },
+          "difficulty": "easy",
+          "tags": ["blood-relations", "reasoning"]
+        }
+      ]
+    },
+    {
+      "name": "General Awareness",
+      "description": "Questions on current affairs, history, geography, polity, economy",
+      "order": 2,
+      "questions": [
+        {
+          "questionNumber": 26,
+          "questionText": "Who is known as the 'Father of Indian Constitution'?",
+          "questionType": "single",
+          "options": [
+            {
+              "optionText": "Mahatma Gandhi",
+              "isCorrect": false
+            },
+            {
+              "optionText": "Jawaharlal Nehru",
+              "isCorrect": false
+            },
+            {
+              "optionText": "Dr. B.R. Ambedkar",
+              "isCorrect": true
+            },
+            {
+              "optionText": "Sardar Vallabhbhai Patel",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Dr. B.R. Ambedkar is known as the Father of Indian Constitution for his pivotal role in drafting the Constitution",
+          "marks": {
+            "positive": 1,
+            "negative": 0.25
+          },
+          "difficulty": "easy",
+          "tags": ["polity", "history"]
+        },
+        {
+          "questionNumber": 27,
+          "questionText": "Which is the largest organ in the human body?",
+          "questionType": "single",
+          "options": [
+            {
+              "optionText": "Heart",
+              "isCorrect": false
+            },
+            {
+              "optionText": "Brain",
+              "isCorrect": false
+            },
+            {
+              "optionText": "Liver",
+              "isCorrect": false
+            },
+            {
+              "optionText": "Skin",
+              "isCorrect": true
+            }
+          ],
+          "explanation": "Skin is the largest organ of the human body, covering approximately 20 square feet",
+          "marks": {
+            "positive": 1,
+            "negative": 0.25
+          },
+          "difficulty": "easy",
+          "tags": ["science", "biology"]
+        }
+      ]
+    },
+    {
+      "name": "Quantitative Aptitude",
+      "description": "Questions on mathematics, arithmetic, algebra, geometry",
+      "order": 3,
+      "questions": [
+        {
+          "questionNumber": 51,
+          "questionText": "What is 15% of 200?",
+          "questionType": "single",
+          "options": [
+            {
+              "optionText": "25",
+              "isCorrect": false
+            },
+            {
+              "optionText": "30",
+              "isCorrect": true
+            },
+            {
+              "optionText": "35",
+              "isCorrect": false
+            },
+            {
+              "optionText": "40",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "15% of 200 = (15/100) × 200 = 30",
+          "marks": {
+            "positive": 1,
+            "negative": 0.25
+          },
+          "difficulty": "easy",
+          "tags": ["percentage", "arithmetic"]
+        },
+        {
+          "questionNumber": 52,
+          "questionText": "If the area of a square is 64 cm², what is its perimeter?",
+          "questionType": "single",
+          "options": [
+            {
+              "optionText": "28 cm",
+              "isCorrect": false
+            },
+            {
+              "optionText": "30 cm",
+              "isCorrect": false
+            },
+            {
+              "optionText": "32 cm",
+              "isCorrect": true
+            },
+            {
+              "optionText": "36 cm",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Side = √64 = 8 cm, Perimeter = 4 × side = 4 × 8 = 32 cm",
+          "marks": {
+            "positive": 1,
+            "negative": 0.25
+          },
+          "difficulty": "medium",
+          "tags": ["geometry", "mensuration"]
+        }
+      ]
+    },
+    {
+      "name": "English Comprehension",
+      "description": "Questions on grammar, vocabulary, comprehension",
+      "order": 4,
+      "questions": [
+        {
+          "questionNumber": 76,
+          "questionText": "Choose the correct synonym of 'ABUNDANT':",
+          "questionType": "single",
+          "options": [
+            {
+              "optionText": "Scarce",
+              "isCorrect": false
+            },
+            {
+              "optionText": "Plentiful",
+              "isCorrect": true
+            },
+            {
+              "optionText": "Rare",
+              "isCorrect": false
+            },
+            {
+              "optionText": "Limited",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Abundant means existing or available in large quantities; plentiful",
+          "marks": {
+            "positive": 1,
+            "negative": 0.25
+          },
+          "difficulty": "easy",
+          "tags": ["vocabulary", "synonyms"]
+        },
+        {
+          "questionNumber": 77,
+          "questionText": "Fill in the blank: She has been working here _____ 2015.",
+          "questionType": "single",
+          "options": [
+            {
+              "optionText": "for",
+              "isCorrect": false
+            },
+            {
+              "optionText": "since",
+              "isCorrect": true
+            },
+            {
+              "optionText": "from",
+              "isCorrect": false
+            },
+            {
+              "optionText": "in",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "'Since' is used with a specific point in time (2015), while 'for' is used with duration",
+          "marks": {
+            "positive": 1,
+            "negative": 0.25
+          },
+          "difficulty": "easy",
+          "tags": ["grammar", "prepositions"]
+        }
+      ]
+    }
+  ],
+  "isPaid": false,
+  "price": 0,
+  "showAnswers": true,
+  "shuffleQuestions": false,
+  "allowedAttempts": 3,
+  "isActive": true
+}

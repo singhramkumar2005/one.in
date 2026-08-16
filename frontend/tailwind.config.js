@@ -1,0 +1,106 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        // App Theme based on Pastel Lavender Task App Reference
+        app: {
+          bg: '#F3EEFB', // Main pastel lavender canvas
+          'bg-light': '#F8F4FD',
+          card: '#FFFFFF',
+          dark: '#141416',
+          'dark-pill': '#1E1F24',
+          subtle: '#EDE6F6',
+          border: '#E8DFF2',
+        },
+        primary: {
+          50: '#F5EFFF',
+          100: '#EBDDFF',
+          200: '#D8BEFF',
+          300: '#C099FF',
+          400: '#A771FE',
+          500: '#8E4CF6', // Accent Lavender / Violet
+          600: '#7A35DF',
+          700: '#6424C1',
+          800: '#4F1B9C',
+          900: '#3D1577',
+        },
+        // Pastel Reference Palette
+        palette: {
+          green: '#44D368',
+          'green-light': '#DDF9E2',
+          'green-dark': '#157335',
+          purple: '#9C6ADE',
+          'purple-light': '#EFE7FC',
+          'purple-dark': '#5D2E9D',
+          orange: '#FF9F38',
+          'orange-light': '#FFF0DD',
+          'orange-dark': '#9A5506',
+          pink: '#FF708F',
+          'pink-light': '#FFE8EE',
+          'pink-dark': '#A11B3D',
+          blue: '#5B8DEF',
+          'blue-light': '#E5EFFF',
+          'blue-dark': '#1C469D',
+          lilac: '#D6A6FF',
+          'lilac-light': '#F6EDFF',
+        },
+        // Accent Colors
+        accent: {
+          green: '#44D368',
+          'green-light': '#DDF9E2',
+          yellow: '#FF9F38',
+          'yellow-light': '#FFF0DD',
+          blue: '#5B8DEF',
+          'blue-light': '#E5EFFF',
+          purple: '#9C6ADE',
+          'purple-light': '#EFE7FC',
+          pink: '#FF708F',
+          'pink-light': '#FFE8EE',
+          orange: '#FF9F38',
+          'orange-light': '#FFF0DD',
+          red: '#FF708F',
+          'red-light': '#FFE8EE',
+        },
+        // Semantic Colors
+        success: '#44D368',
+        warning: '#FF9F38',
+        error: '#FF708F',
+        danger: '#FF708F',
+        info: '#5B8DEF',
+      },
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"Segoe UI"', 'sans-serif'],
+        display: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        body: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+      },
+      borderRadius: {
+        'xs': '8px',
+        'sm': '12px',
+        'DEFAULT': '16px',
+        'md': '16px',
+        'lg': '20px',
+        'xl': '24px',
+        '2xl': '28px',
+        '3xl': '36px',
+        'pill': '9999px',
+      },
+      boxShadow: {
+        'xs': '0 1px 3px rgba(80, 50, 110, 0.04)',
+        'sm': '0 2px 8px rgba(80, 50, 110, 0.05)',
+        'DEFAULT': '0 4px 16px rgba(80, 50, 110, 0.06)',
+        'md': '0 6px 20px rgba(80, 50, 110, 0.07)',
+        'lg': '0 10px 30px rgba(80, 50, 110, 0.08)',
+        'xl': '0 16px 40px rgba(80, 50, 110, 0.1)',
+        '2xl': '0 24px 60px rgba(80, 50, 110, 0.12)',
+        'soft': '0 4px 20px rgba(142, 76, 246, 0.08)',
+        'floating': '0 8px 30px rgba(110, 80, 150, 0.12)',
+      },
+    },
+  },
+  plugins: [],
+}
