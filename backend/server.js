@@ -11,8 +11,9 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:3001',
-  'https://one-in-3z4i-five.vercel.app', // Frontend production URL
-  process.env.FRONTEND_URL, // Set this in Vercel environment variables
+  'https://one-in.vercel.app', // Frontend production URL
+  'https://one-in-3z4i-five.vercel.app', // Temporary frontend URL
+  process.env.FRONTEND_URL,
 ];
 
 app.use(cors({
