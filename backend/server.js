@@ -65,7 +65,11 @@ app.use('/api/todos', require('./routes/todos'));
 
 // Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Server is running' });
+  res.json({ 
+    status: 'OK', 
+    message: 'Server is running',
+    nodeVersion: process.version 
+  });
 });
 
 // Error handling middleware
