@@ -116,8 +116,10 @@ router.post('/folder', protect, async (req, res) => {
       });
     }
 
-    // Generate unique folder ID if not provided
-    const uniqueFolderId = folderId || `folder_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    // Generate unique folder ID - ALWAYS generate if not provided or null
+    const uniqueFolderId = folderId && folderId !== 'null' && folderId !== 'undefined' 
+      ? folderId 
+      : `folder_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 
     const folderData = {
       name,
