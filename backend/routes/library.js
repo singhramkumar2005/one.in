@@ -158,21 +158,24 @@ router.post('/folder', protect, async (req, res) => {
 
     // Auto-sync with Attendance Syllabus if linked to a subject
     try {
-      const Attendance = require('../models/Attendance');
-      let attendance = await Attendance.findOne({ userId: req.user._id });
-      if (attendance && subjectId) {
-        const subject = attendance.subjects.find(s => s.id === subjectId || s.name.toLowerCase() === (subjectName || '').toLowerCase());
-        const avgMins = totalVideos > 0 && totalDuration > 0 ? Math.round(totalDuration / (totalVideos * 60)) : 45;
-        if (subject) {
-          subject.totalLectures = totalVideos;
-          if (avgMins > 0) subject.durationMinutes = avgMins;
-          attendance.markModified('subjects');
-          await attendance.save();
-          console.log('🔄 Synced with attendance');
+      if (subjectId) {
+        const Attendance = require('../models/Attendance');
+        let attendance = await Attendance.findOne({ userId: req.user._id });
+        if (attendance) {
+          const subject = attendance.subjects.find(s => s.id === subjectId || s.name.toLowerCase() === (subjectName || '').toLowerCase());
+          const avgMins = totalVideos > 0 && totalDuration > 0 ? Math.round(totalDuration / (totalVideos * 60)) : 45;
+          if (subject) {
+            subject.totalLectures = totalVideos;
+            if (avgMins > 0) subject.durationMinutes = avgMins;
+            attendance.markModified('subjects');
+            await attendance.save();
+            console.log('🔄 Synced with attendance');
+          }
         }
       }
     } catch (syncErr) {
       console.warn('⚠️ Attendance auto-sync non-critical error:', syncErr.message);
+      // Don't fail the request if attendance sync fails
     }
 
     res.json({
